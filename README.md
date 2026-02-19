@@ -1,2 +1,71 @@
-# tp53-rna-seq-differential-gene-expression-analysis
-End-to-end RNA-seq differential gene expression analysis using DESeq2 to study transcriptional changes caused by TP53 mutations in pancreatic cancer cells including normalization, DEG identification, PCA, volcano plots, and pathway insights.
+# Differential Gene Expression Analysis of TP53 Mutation in Pancreatic Cancer
+
+This project investigates how TP53 mutations alter gene expression and contribute to therapeutic resistance in pancreatic cancer using RNA-seq data.
+
+The dataset was obtained from the Gene Expression Omnibus.
+
+Dataset accession: GSE291036
+
+## Research Objective
+
+To identify differentially expressed genes associated with TP53 mutation and therapy resistance.
+
+## Dataset
+
+Samples analyzed: 4 RNA-seq samples
+Control samples: GSM8827850, GSM8827851
+TP53 mutant samples: GSM8827854, GSM8827855
+
+Cell line: MiaPaCa-2 pancreatic cancer cell line
+
+## Analysis Workflow
+
+Data acquisition → Data preprocessing → Normalization → Differential expression analysis → Identification of significant genes → Visualization → Functional interpretation
+
+## Tools Used
+
+R
+DESeq2
+GEOquery
+ggplot2
+pheatmap
+RStudio
+
+## Differential Expression Criteria
+
+Significant genes: Adjusted p-value < 0.05
+Upregulated genes: log2FoldChange > 1
+Downregulated genes: log2FoldChange < -1
+
+## Key Findings
+Expression Patterns
+
+Principal component analysis shows clear separation between control and TP53 mutant samples, indicating strong transcriptional changes.
+
+### Upregulated Pathways
+
+Cell cycle progression
+MAPK signaling
+Drug resistance pathways
+
+### Downregulated Pathways
+
+Apoptosis
+Tumor suppression mechanisms
+DNA damage response
+
+These results suggest that TP53 mutation may drive cancer progression and therapy resistance through transcriptional reprogramming.
+
+## Visualizations
+
+Volcano plot
+Heatmap of top differentially expressed genes
+PCA plot
+
+## Skills Demonstrated
+
+RNA-seq analysis in R
+Differential gene expression analysis
+Statistical genomics
+Biological data visualization
+Cancer transcriptomics
