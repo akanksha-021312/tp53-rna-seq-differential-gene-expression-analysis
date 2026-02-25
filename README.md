@@ -20,7 +20,21 @@ Cell line: MiaPaCa-2 pancreatic cancer cell line
 
 ## Analysis Workflow
 
-Data acquisition → Data preprocessing → Normalization → Differential expression analysis → Identification of significant genes → Visualization → Functional interpretation
+Download GEO dataset
+↓
+Prepare metadata
+↓
+Load count data in R
+↓
+Data preprocessing
+↓
+DESeq2 analysis
+↓
+Identify significant genes
+↓
+Visualization (PCA, volcano, heatmap)
+↓
+Biological interpretation
 
 ## Tools Used
 
